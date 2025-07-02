@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Create a backend Code for vite-project.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "nodemon server.js",
+    "dev": "nodemon server.js",
+    "build": "parcel build server.js --out-dir dist --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git@github.com/AayushSahani01/Pooja_project.git"
+  },
+  "keywords": [
+    "NodeJs",
+    "ExpressJs",
+    "Cors",
+    "Nodemon",
+    "parcel",
+    "Passport"
+  ],
+  "author": "Aayush Sahani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AayushSahani01/Pooja_project/issues"
+  },
+  "homepage": "https://github.com/AayushSahani01/Pooja_project#readme",
+  "dependencies": {
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
