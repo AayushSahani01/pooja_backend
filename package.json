@@ -2,12 +2,13 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Create a backend Code for vite-project.",
-  "main": "server.js",
+  "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "node server.js",
-    "start": "nodemon server.js",
-    "dev": "nodemon server.js",
-    "build": "parcel build server.js --out-dir dist --public-url ./"
+    "test": "node index.js",
+    "start": "nodemon index.js",
+    "dev": "nodemon index.js",
+    "build": "parcel build index.js --out-dir dist --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -23,13 +24,13 @@
   ],
   "author": "Aayush Sahani",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AayushSahani01/Pooja_project/issues"
-  },
   "homepage": "https://github.com/AayushSahani01/Pooja_project#readme",
   "dependencies": {
-    "dotenv": "^17.0.1",
+    "@dotenvx/dotenvx": "^1.45.2",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
     "express": "^5.1.0",
+    "mongodb": "5.5",
     "mongoose": "^8.16.1"
   },
   "devDependencies": {
