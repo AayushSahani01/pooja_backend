@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 
 const app = express();
 app.use (cors());
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 app.use(express.json());
  
@@ -30,12 +30,12 @@ mongoose.connect(process.env.MONGODB_URL,{
  .then(() => {
     console.log("Connected to MongoDB Successfully!!");
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Server is running on http://localhost:${process.env.PORT}`);
   });
     })
 .catch((error) => {
-    console.error("Error connecting to MongoDB:", error);
+    console.error("Error connection failed!!:", error);
   })
   .finally(() => {
     mongoose.connection.close();
