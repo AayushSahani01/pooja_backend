@@ -69,20 +69,30 @@ backend/
 
 ## Contributing
 
-1. Fork the repository
-2. Create your feature branch
-   ```bash
+### 1. Fork the repository
+
+### 2. Create your feature branch
+ 
+  ```bash
+
    git checkout -b feature/your-feature-name
+
    ```
-3. Commit your changes
+### 3. Commit your changes
+
    ```bash
+
    git commit -m "Add: brief description of your changes"
+
    ```
-4. Push to your branch
+### 4. Push to your branch
+
    ```bash
+
    git push origin feature/your-feature-name
+
    ```
-5. Open a Pull Request
+### 5. Open a Pull Request !
 
 ## Development Guidelines
 
@@ -93,9 +103,13 @@ backend/
 - Add unit tests for new features
 
 ## Scripts
+
 - `npm run dev` - Start development server
+
 - `npm start` - Start production server
+
 - `npm test` - Run tests
+
 - `npm run lint` - Check code style
 
 ## Common Issues & Solutions
@@ -106,11 +120,13 @@ backend/
    - Verify IP whitelist in MongoDB Atlas
 
 2. **Port Already in Use**
-   - Change PORT in .env file
-   - Kill process using current port
 
-## License
-MIT License
+- Change PORT in .env file
 
-## Contact
+- Kill process using current port
+
+---
+  
+
+## `Contact`
 For questions or support, please open an issue in the repository.
